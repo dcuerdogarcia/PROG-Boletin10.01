@@ -5,7 +5,9 @@ public class Boletin1001 {
 
     public static void main(String[] args) {
         
-           
+        Juego adivinar = new Juego();
+        adivinar.pedirAdiviña();
+        adivinar.xogo();
         
     }
 }
