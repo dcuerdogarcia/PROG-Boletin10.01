@@ -6,7 +6,6 @@ import javax.swing.JOptionPane;
 public class Juego {
     int numero;
     
-    
     //Introducir o numero a adiviñar polo segundo xogador
     public void pedirAdiviña(){
         int numeroI = Integer.parseInt(JOptionPane.showInputDialog("Introduce o número a adiviñar para o segundo xogador"));
@@ -34,10 +33,7 @@ public class Juego {
             }
         }
         JOptionPane.showMessageDialog(null, "Felicidades!! a encontrado el numero");
-    }
-    
-    
-    
+    }  
 }
 //created by Seijas
 //To my lovers
