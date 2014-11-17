@@ -18,5 +18,21 @@ public class Validar {
             return numero;
         }
     }
+    
+    public int positivo(int numero){
+        
+        if(numero>0){
+            return numero;
+        }
+        while(numero<=0){
+            if(numero==0){
+                JOptionPane.showMessageDialog(null, "No seas malo, deja intentarlo al menos una vez");
+            }else{
+                numero = Integer.parseInt(JOptionPane.showInputDialog("Introduzca un valor positivo"));
+            }
+        }
+        return numero;
+    }
+    
 }
 //Created by Seijas

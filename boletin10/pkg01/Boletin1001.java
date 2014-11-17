@@ -7,6 +7,7 @@ public class Boletin1001 {
         
         Juego adivinar = new Juego();
         adivinar.pedirAdiviña();
+        adivinar.intetos();
         adivinar.xogo();
         
     }
