@@ -12,10 +12,10 @@ public class Validar {
             num = Byte.parseByte(null, numero);
             return num;
         }else{
-            numero = Integer.parseInt(JOptionPane.showInputDialog("O número introducido non é valido. \nIntroduza un numero entre 0 e 50"));
+            //numero = Integer.parseInt(JOptionPane.showInputDialog("O número introducido non é valido. \nIntroduza un numero entre 0 e 50"));
             
             while(numero<0 && numero>50){
-                JOptionPane.showInputDialog("O número introducido non é valido. \nIntroduza un numero entre 0 e 50");
+                numero = Integer.parseInt(JOptionPane.showInputDialog("O número introducido non é valido. \nIntroduza un numero entre 0 e 50"));
             }
             num = Byte.parseByte(null, numero);
             return num;

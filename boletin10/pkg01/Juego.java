@@ -4,7 +4,7 @@ package boletin10.pkg01;
 import javax.swing.JOptionPane;
 
 public class Juego {
-    int numero;
+    byte numero;
     
     
     //Introducir o numero a adiviñar polo segundo xogador
@@ -22,12 +22,11 @@ public class Juego {
             if(numeroA>numero){
                 JOptionPane.showMessageDialog(null, "O numero buscado e menor");
             }else{
-                JOptionPane.showMessageDialog(null, "Error");
-            }
-            if(numeroA<numero){
-                JOptionPane.showMessageDialog(null, "O numero buscado e maior");
-            }else{
-                JOptionPane.showMessageDialog(null, "Error");
+                if(numeroA<numero){
+                    JOptionPane.showMessageDialog(null, "O numero buscado e MAIOR");
+                }else{
+                    JOptionPane.showMessageDialog(null, "Error");
+                }
             }
         }
         JOptionPane.showMessageDialog(null, "Felicidades!! a encontrado el numero");
