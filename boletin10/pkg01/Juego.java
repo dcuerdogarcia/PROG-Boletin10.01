@@ -4,7 +4,7 @@ package boletin10.pkg01;
 import javax.swing.JOptionPane;
 
 public class Juego {
-    byte numero;
+    int numero;
     
     
     //Introducir o numero a adiviñar polo segundo xogador
@@ -15,9 +15,9 @@ public class Juego {
     }
     
     public void xogo(){
-        byte numeroA=51;
+        byte numeroA = 55;
         JOptionPane.showMessageDialog(null, "Adiviñe un numero maior que 0, pero menor que 50 (ambolos dous incluidos)");
-        while (numeroA==numero){
+        while (numeroA!=numero){
             numeroA = Byte.parseByte(JOptionPane.showInputDialog("Introduza un numero"));
             if(numeroA>numero){
                 JOptionPane.showMessageDialog(null, "O numero buscado e menor");
@@ -25,7 +25,11 @@ public class Juego {
                 if(numeroA<numero){
                     JOptionPane.showMessageDialog(null, "O numero buscado e MAIOR");
                 }else{
-                    JOptionPane.showMessageDialog(null, "Error");
+                    if(numeroA==numero){
+                        //nada
+                    }else{
+                        JOptionPane.showMessageDialog(null, "Error");
+                    }
                 }
             }
         }
