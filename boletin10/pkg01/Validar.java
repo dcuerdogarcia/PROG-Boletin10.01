@@ -27,12 +27,12 @@ public class Validar {
         while(numero<=0){
             if(numero==0){
                 JOptionPane.showMessageDialog(null, "No seas malo, deja intentarlo al menos una vez");
+                numero = Integer.parseInt(JOptionPane.showInputDialog("Introduce un valor valido"));
             }else{
                 numero = Integer.parseInt(JOptionPane.showInputDialog("Introduzca un valor positivo"));
             }
         }
         return numero;
     }
-    
 }
 //Created by Seijas
